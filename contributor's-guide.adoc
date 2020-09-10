@@ -1,0 +1,89 @@
+= Spring Contributor's Guide
+
+The Spring team welcomes contributions from the community.
+This brief guide describes how to get involved with the Spring projects.
+
+== Ways to Contribute
+
+There are several ways to contribute to Spring:
+
+* Contribute to a discussion.
++
+If you have a question, you can ask it on Stack Overflow.
+Remember to tag your question with the `spring` tag.
+You can find a list of questions tagged with `spring` https://stackoverflow.com/questions/tagged/spring[here].
+Answers and relevant additional details are also welcome.
++
+If you want to discuss a proposed change before raising an issue or creating a pull request, contact the Spring team on https://gitter.im/spring-projects/home[Gitter].
+Each Spring project has its own Gitter instance.
+The core committers monitor Gitter closely.
+
+* Create an issue.
++
+Note that an issue is not always a "`bug.`"
+Sometimes, an issue is a request for a new feature.
++
+If you find something that does not work as it should or would like to propose a new feature, you can create an issue on Github.
+Before you do so, please check the existing issues (including closed issues) to see if your issue has already been raised.
+If not, open an issue.
++
+When you create an issue, please be thorough and as descriptive as possible.
+For a "`bug,`" you should include the steps needed to reproduce it.
+For a new feature, you should describe the new behavior as clearly and in as much detail as possible.
+Think about it this way: If you were asked to fix the "`bug`" or implement the new feature, what would you need to know?
++
+An issue is really a place to have a discussion.
+We discuss whether the change is needed and, if so, how best to go about implementing the change.
+Once someone creates a pull request to address an issue, we close the issue and continue the discussion in the pull request.
+
+* Report a security vulnerability.
++
+If you find a security vulnerability, report it privately by following the directions https://tanzu.vmware.com/security[here].
++
+IMPORTANT: Do NOT create a Github issue for a security vulnerability.
+Doing so may tell bad actors that the vulnerability exists and, even worse, how to take advantage of it.
+
+== Code of Conduct
+
+Spring has a code of conduct that applies to all Spring projects.
+You can find it https://github.com/spring-projects/.github/blob/master/CODE_OF_CONDUCT.md[here].
+
+== The Contributor License Agreement
+
+For any contribution more serious than correcting a typo, we need contributors to sign the Contributor License Agreement (CLA).
+All the people who do serious work on the Spring project, including all the core committers and project owners, have signed the CLA.
+
+== Code Style
+
+The Spring team has rules for formatting code.
+You can find those rules https://github.com/spring-projects/spring-framework/wiki/Code-Style[here].
+
+NOTE: Spring Boot uses automated code formatting.
+You can read about that https://github.com/spring-projects/spring-boot/blob/master/CONTRIBUTING.adoc#code-conventions-and-housekeeping[here].
+Using those tools takes care of most code formatting issues, even for Spring projects other than Boot.
+
+The Spring team does not necessarily reject contributions that do not meet the code style, but poor formatting definitely slows down the process. If your contribution does have code formatting problems, you are likely to be asked to fix them before your pull request is accepted.
+
+== Test, Test, Test
+
+Do not submit a pull request without running all of the project's tests.
+You can do so by running the build (either Maven or Gradle, depending on the project) for the project.
+The default is to include the tests.
+
+In some cases, you may need to run additional software to run the tests.
+For example, you may need an instance of MySQL to be running and for it to have a database that corresponds to a particular schema.
+Those details are in each project's README page.
+If you have trouble, ask on Gitter or (if you have an existing issue) in the issue.
+
+If you can, you should create tests that match the code you have changed or added.
+Doing so helps to ensure that your code works as expected, raises everyone's confidence, and helps to identify future issues.
+The Spring team loves tests.
+
+== Git Basics
+
+Spring uses Git for source control.
+If you are new to Git or need to improve your knowledge, we recommend reading _Pro Git_, which is available for free https://git-scm.com/book[here].
+
+Also, if you are not familiar with the process of making a pull request and how pull requests are resolved, you should read https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests[Github's help content about pull requests].
+
+Once you are familiar with the basics, you can use our more detailed ./git_guide.adoc[Git guide] to walk through the process of making pull requests for Spring.
